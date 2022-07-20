@@ -14,6 +14,7 @@ jobs:
           mkdir testdir
           wget -r -p -np -k  https://echarts.apache.org/zh/
           ls
+        continue-on-error: true
 
       - name: Deploy 🚀
         uses: ./node_modules/@jamesives/github-pages-deploy-action
