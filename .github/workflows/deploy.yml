@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Install and Build 🔧
         run: |
-          mkdir testdir
+          npm install
           wget -r -p -np -k  https://echarts.apache.org/zh/
           ls
         continue-on-error: true
