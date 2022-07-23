@@ -14,7 +14,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          wget -r -p -np -k  https://echarts.apache.org/zh/
+          npm run build:local
           ls
         continue-on-error: true
 
