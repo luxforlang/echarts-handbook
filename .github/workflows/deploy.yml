@@ -16,13 +16,14 @@ jobs:
           npm install
           npm run build:local
           ls
+          du -sh .
         continue-on-error: true
 
       - name: Deploy 🚀
         uses: ./node_modules/@jamesives/github-pages-deploy-action
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: echarts.apache.org
+          folder: dist
           target-folder: docs
           single-commit: true
           clean: true
